@@ -1,0 +1,44 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login-form {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.github-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.form-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.login-btn {
+    border-radius: 12px;
+    width: 40%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(37, 238, 37);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.login-btn:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(0.9);
+    background-color: green;
+}

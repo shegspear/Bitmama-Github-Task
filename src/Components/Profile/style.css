@@ -1,0 +1,130 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    top: -20px;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.camera-icon {
+    z-index: 9999;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 180px;
+    right: 0px;
+    border: 1px solid grey;
+}
+
+.profile-body{
+   /* border: 1px solid black; */
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.user-name,
+.name {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.user-name {
+    font-weight: 700;
+    width: 65%;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.name {
+    color: grey;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    /* border: 1px solid red; */
+    width: 65%;
+}
+
+.follow-btn {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 66%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    /* border: 1px solid red; */
+    width: 65%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.follow-cont {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.follow-num {
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.follow-num-2 {
+    font-weight: 700;
+}
+
+.follow-text {
+    margin-left: 5px;
+}
+
+.social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    /* border: 1px solid red; */
+    width: 65%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.achieve-cont {
+    border-top: 1px solid grey;
+    width: 65%;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+
+.achieve-label{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+}
