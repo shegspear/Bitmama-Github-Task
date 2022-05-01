@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import './style.css';
 import HeaderComp from '../../Components/Header/Index';
@@ -6,7 +6,28 @@ import ProfileComp from '../../Components/Profile/Index';
 import SearchComp from '../../Components/Search/Index';
 import RepositoryComp from '../../Components/Repository/Index';
 
+//testing db
+import testDB from '../../TestingDB/Index';
+
 function RepositoryPage() {
+  const[repoDB, setRepoDB] = useState([]);
+
+  function filterRepo(value) {
+    let repoArr = [];
+
+    testDB.forEach(repo => {
+      if(repo.title.toLowerCase().indexOf(value.toLowerCase()) !== -1) {
+        repoArr.push(repo)
+      }
+    });
+
+    setRepoDB(repoArr);
+  };
+
+  useEffect(() => {
+    setRepoDB(testDB);
+  }, []);
+
   return (
     <div className='page'>
 
@@ -25,10 +46,12 @@ function RepositoryPage() {
           </div>
 
           <div className='my-3'>
-            <SearchComp />
+            <SearchComp filterRepo={filterRepo} />
           </div>
 
-          <RepositoryComp />
+          {
+            repoDB.map(repo => <RepositoryComp key={repo.id} repo={repo} />)
+          }
 
         </div>
 

@@ -7,43 +7,51 @@ function Index({
     repo
 }) {
   return (
-    <div className='repo-cont'>
+    <div key={repo.id} className='repo-cont'>
 
-        <div>
+        <div className='sub-cont-1'>
             <p className='repo-title'>
-                api-design-with-djangorest
+                {repo.title}
                 <span className='repo-type'>
                     Public
                 </span>
             </p>
 
             <p className='repo-desc'>
-                Api design with django framework
+               {repo.description}
             </p>
 
-            <div className='d-flex flex-row justify-content-between align-items-center'>
+            <div className='sub-cont-1-child-3'>
                <p>
-                    <span className='repo-color'>
+                    <span
+                        style={{
+                            color:  repo.language === 'Python' ?
+                            'blue' : 'yellow'
+                        }} 
+                        className='repo-color'
+                    >
                         <i className="fa fa-circle" aria-hidden="true"></i>
                     </span>
 
                     <span className='repo-lang'>
-                        Python
+                        {repo.language}
                     </span>
                </p>
 
                <p className='d-flex flex-row justify-content-center align-items-center'>
-                   <span className='repo-star me-1'>
+                   <span 
+                    className='repo-star me-1'
+                   >
                     <i className="bi bi-star"></i>
                    </span>
 
                    <span className='repo-lang'>
-                   1
+                   {repo.starRating}
                    </span>
                </p>
 
                <p className='repo-update'>
-                   Updated 5 days ago
+                   Updated {repo.timeStamp} days ago
                </p>
             </div>
         </div>

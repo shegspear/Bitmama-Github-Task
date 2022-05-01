@@ -1,9 +1,13 @@
 .repo-cont {
     border-top: 1px solid grey;
-    padding: 10px 0px;
+    padding: 15px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.sub-cont-1 {
+    width: 50%;
 }
 
 .repo-title {
@@ -26,14 +30,21 @@
 
 .repo-desc {
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     color: black;
 }
 
+.sub-cont-1-child-3 {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .repo-color {
-    color: blue;
     margin-right: 5px;
 }
 

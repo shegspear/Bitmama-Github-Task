@@ -3,13 +3,16 @@ import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 import './style.css'
 
-function Index() {
+function Index({
+    filterRepo
+}) {
   return (
     <div className='search-cont'>
         <input
             className='search-input' 
             placeholder='Find a repository...'
             type={'search'}
+            onChange={(e) => {filterRepo(e.target.value)}}
         />
 
         <div className='filter-btn-cont'>
