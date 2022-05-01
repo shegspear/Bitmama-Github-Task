@@ -31,7 +31,9 @@ function RepositoryPage() {
   return (
     <div className='page'>
 
+     <div className='desktop-header'>
       <HeaderComp currentPage={'repository'} />
+     </div>
 
       <div className='page-body'>
 

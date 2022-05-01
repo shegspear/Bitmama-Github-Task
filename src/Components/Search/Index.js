@@ -15,7 +15,7 @@ function Index({
             onChange={(e) => {filterRepo(e.target.value)}}
         />
 
-        <div className='filter-btn-cont'>
+        {/* <div className='filter-btn-cont'> */}
 
             <DropdownButton
             
@@ -47,7 +47,7 @@ function Index({
                 <Dropdown.Item href="#">Size</Dropdown.Item>
             </DropdownButton>
 
-        </div>
+        {/* </div> */}
     </div>
   );
 };

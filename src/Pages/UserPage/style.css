@@ -24,3 +24,26 @@
     padding: 0px 30px 10px 0px;
     /* background-color: green; */
 }
+
+@media screen and (max-width: 1110px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .page-body {
+        flex-direction: column;
+    }
+
+    .profile-cont {
+        width: 100%;
+    }
+
+    .page-body-cont {
+        display: 100%;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+}

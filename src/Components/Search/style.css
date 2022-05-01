@@ -3,11 +3,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* border: 1px solid black; */
 }
 
 .search-input {
     width: 73%;
     outline: none;
+    margin-right: 20px;
 }
 
 .filter-btn-cont {

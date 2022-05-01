@@ -19,23 +19,25 @@ function Index() {
 
        <div className='profile-body'>
 
-            <p className='user-name'>
-                Ezokafor
-            </p>
+            <div>
+                <p className='user-name'>
+                    Ezokafor
+                </p>
 
-            <p className='name'>
-                Ezokafor GoodnessEzeokafor
-            </p>
+                <p className='name'>
+                    Ezokafor GoodnessEzeokafor
+                </p>
 
-            <button
-                className='follow-btn'
-            >
-                Follow
-            </button>
+                <button
+                    className='follow-btn'
+                >
+                    Follow
+                </button>
 
-            <p className='desc'>
-                try to be better than yesterday
-            </p>
+                <p className='desc'>
+                    try to be better than yesterday
+                </p>
+            </div>
 
             <div className='follow-cont'>
                 <p> 
