@@ -1,10 +1,11 @@
 import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Modal } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import {
   login
 } from '../../Actions/useraction';
-
 import './style.css';
 function MyVerticallyCenteredModal(props) {
   return (
@@ -34,14 +35,17 @@ function LoginPage({location, history}) {
   const dispatch = useDispatch();
 
   const userLogin = useSelector(state => state.userLogin);
-  const {loadingUserInfo, userInfo} = userLogin;
+  const {loadingUserInfo, error, userInfo} = userLogin;
 
   // const githubUser = useSelector(state => state.githubUser);
   // const {loadingUserRequest, userDetails} = githubUser;
 
   useEffect(() => {
     let resCode = window.location.search.split('=')[1];
-    dispatch(login(resCode));
+    if (resCode !== undefined) {
+      dispatch(login(resCode));
+    }
+    
     if(userInfo) {
       history.push('/repository')
     }
@@ -90,6 +94,26 @@ function LoginPage({location, history}) {
             Login
           </button>
         </a>
+
+        { error && (
+            <div className='mt-5 fail-safe-cont'>
+              <p className='fail-safe-title'>
+                Experiencing CORS restriction with Github,
+                please use the fail safe access bellow
+              </p>
+    
+              <div className='text-center' style={{width: '100%'}}>
+                <Link to="/repository">
+                  <button
+                    className='login-btn'
+                  >
+                    access repo
+                  </button>
+                </Link>
+              </div>
+           </div>
+          )
+        }
 
       </div>
 

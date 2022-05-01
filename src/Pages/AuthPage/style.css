@@ -8,7 +8,7 @@
 
 .login-form {
     /* border: 1px solid black; */
-    width: 50%;
+    width: 700px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -41,4 +41,18 @@
     transition: ease-in-out 0.3s;
     transform: scale(0.9);
     background-color: green;
+}
+
+.fail-safe-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fail-safe-title {
+    width: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    color: red;
+    text-align: center;
 }
