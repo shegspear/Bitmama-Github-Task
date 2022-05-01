@@ -26,6 +26,8 @@ export const login = (code) => async (dispatch) => {
   
         const config = {
             Headers: {
+            'Access-Control-Allow-Origin' : '*',
+            'Accept' : 'application/json',
             'Content-Type' : 'application/json'
             }
         };
