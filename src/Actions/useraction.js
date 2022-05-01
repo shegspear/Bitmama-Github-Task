@@ -34,7 +34,7 @@ export const login = (code) => async (dispatch) => {
   
         const {data} = await axios.post(`https://github.com/login/oauth/access_token?client_id=f57fc45a6dd209a0b880?client_secret=09d76a78818935dbd508895e7ea05821aae4a8f8?code=${code}?redirect_uri=https://dreamy-lamington-1f6400.netlify.app/repository`, 
             {
-                Headers: {
+                headers: {
                     "Access-Control-Allow-Origin" : "*",
                     "Accept" : "application/json",
                     "Content-Type" : "application/json"

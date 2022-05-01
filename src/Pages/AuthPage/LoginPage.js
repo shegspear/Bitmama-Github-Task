@@ -40,10 +40,25 @@ function LoginPage({location, history}) {
   // const githubUser = useSelector(state => state.githubUser);
   // const {loadingUserRequest, userDetails} = githubUser;
 
+  // function logMeIn(code) {
+  //   fetch(`https://github.com/login/oauth/access_token?client_id=f57fc45a6dd209a0b880?client_secret=09d76a78818935dbd508895e7ea05821aae4a8f8?code=${code}?redirect_uri=https://dreamy-lamington-1f6400.netlify.app/repository`,
+  //   {
+  //     method: "POST",
+  //     headers: {
+  //       "Access-Control-Allow-Origin" : "*",
+  //       "Accept" : "application/json",
+  //       "Content-type" : "application/json"
+  //       }
+  //   }
+  //   ).then(res => console.log(res))
+  //   .catch(err => console.log(err))
+  // };
+
   useEffect(() => {
     let resCode = window.location.search.split('=')[1];
     if (resCode !== undefined) {
       dispatch(login(resCode));
+      // logMeIn(resCode)
     }
     
     if(userInfo) {
