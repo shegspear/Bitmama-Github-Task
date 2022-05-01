@@ -98,8 +98,8 @@ function LoginPage({location, history}) {
         { error && (
             <div className='mt-5 fail-safe-cont'>
               <p className='fail-safe-title'>
-                Experiencing CORS restriction from Github,
-                please use the fail safe access bellow
+                Experiencing CORS restriction from Github servers,
+                please use the fail safe access
               </p>
     
               <div className='text-center' style={{width: '100%'}}>
@@ -107,7 +107,7 @@ function LoginPage({location, history}) {
                   <button
                     className='login-btn'
                   >
-                    access repo
+                    access 
                   </button>
                 </Link>
               </div>
