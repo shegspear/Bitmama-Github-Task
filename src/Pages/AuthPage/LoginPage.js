@@ -99,7 +99,7 @@ function LoginPage({location, history}) {
             <div className='mt-5 fail-safe-cont'>
               <p className='fail-safe-title'>
                 Experiencing CORS restriction from Github servers,
-                please use the fail safe access
+                please use the backup access
               </p>
     
               <div className='text-center' style={{width: '100%'}}>

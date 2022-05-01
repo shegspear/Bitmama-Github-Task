@@ -48,7 +48,8 @@ function RepositoryPage() {
             <p>
               Please use the search bar to filter 
               through the twenty available repository results. <br />
-              Also access your browsers Devtools to visualize the Redux Toolkit. 
+              Also access your browsers Devtools to visualize the Redux Toolkit. <br />
+              Thank you.
             </p>
           </Modal.Body>
         </Modal>
