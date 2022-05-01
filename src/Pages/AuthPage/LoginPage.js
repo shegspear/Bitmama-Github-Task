@@ -29,7 +29,7 @@ function MyVerticallyCenteredModal(props) {
   );
 };
 
-function LoginPage({history, location}) {
+function LoginPage({location, history}) {
   // const [modalShow, setModalShow] = useState(false);
   const dispatch = useDispatch();
 
@@ -40,7 +40,7 @@ function LoginPage({history, location}) {
   // const {loadingUserRequest, userDetails} = githubUser;
 
   useEffect(() => {
-    let resCode = location.search.split('=')[1];
+    let resCode = window.location.search.split('=')[1];
     dispatch(login(resCode));
     if(userInfo) {
       history.push('/repository')
