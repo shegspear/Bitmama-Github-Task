@@ -30,6 +30,10 @@
         display: none;
     }
 
+    .page {
+        width: 100%;
+    }
+
     .page-body {
         flex-direction: column;
     }
@@ -39,7 +43,8 @@
     }
 
     .page-body-cont {
-        display: 100%;
+        width: 100%;
+        padding: 0px 10px;
     }
 
     .mobile-header {

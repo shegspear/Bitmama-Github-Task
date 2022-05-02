@@ -51,3 +51,13 @@
     padding-right: 10px;
     padding-left: 10px;
 }
+
+@media screen and (max-width: 1110px) {
+    .navbar-cont {
+        padding-left: 0%;
+    }
+
+    .navbar-collection {
+        width: 100%;
+    }
+}

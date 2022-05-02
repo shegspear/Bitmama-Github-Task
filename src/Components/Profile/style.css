@@ -131,9 +131,8 @@
     line-height: 1.25;
 }
 
-/* @media screen and (max-width: 1110px) {
-    .profile,
-    .profile-body {
-        flex-direction: row;
+@media screen and (max-width: 1110px) {
+    .image-cont {
+        top: 0px;
     }
-} */
+}
